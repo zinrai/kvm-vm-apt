@@ -56,4 +56,4 @@ $ ./kvm-apt -image /path/to/debian.qcow2 -packages python3-consul,nginx debian10
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) for details.
+This project is licensed under the [MIT License](./LICENSE).
