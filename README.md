@@ -1,6 +1,6 @@
-# kvm-apt
+# kvm-vm-apt
 
-`kvm-apt` is a command-line tool designed to simplify the process of installing packages on KVM (Kernel-based Virtual Machine) images. It allows users to install packages on either a specified VM or a direct image file.
+`kvm-vm-apt` is a command-line tool designed to simplify the process of installing packages on KVM (Kernel-based Virtual Machine) images. It allows users to install packages on either a specified VM or a direct image file.
 
 ## Features
 
@@ -35,23 +35,23 @@ $ go build
 ### Installing packages on a VM:
 
 ```
-$ ./kvm-apt -packages <package1,package2,...> <vm_name>
+$ ./kvm-vm-apt -packages <package1,package2,...> <vm_name>
 ```
 
 Example:
 ```
-$ ./kvm-apt -packages python3,golang,vim ubuntu20-04
+$ ./kvm-vm-apt -packages python3,golang,vim ubuntu20-04
 ```
 
 ### Installing packages on a specific image:
 
 ```
-$ ./kvm-apt -image <path_to_image> -packages <package1,package2,...> <vm_name>
+$ ./kvm-vm-apt -image <path_to_image> -packages <package1,package2,...> <vm_name>
 ```
 
 Example:
 ```
-$ ./kvm-apt -image /path/to/debian.qcow2 -packages python3-consul,nginx debian10
+$ ./kvm-vm-apt -image /path/to/debian.qcow2 -packages python3-consul,nginx debian10
 ```
 
 ## License

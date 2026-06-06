@@ -17,7 +17,7 @@ type DomainDisk struct {
 }
 
 type Domain struct {
-	XMLName xml.Name     `xml:"domain"`
+	XMLName xml.Name `xml:"domain"`
 	Devices struct {
 		Disks []DomainDisk `xml:"disk"`
 	} `xml:"devices"`
@@ -33,7 +33,7 @@ func main() {
 
 	args := flag.Args()
 	if len(args) != 1 || packages == "" {
-		fmt.Println("Usage: kvm-apt [-image <image_path>] -packages <package1,package2,...> <vm_name>")
+		fmt.Println("Usage: kvm-vm-apt [-image <image_path>] -packages <package1,package2,...> <vm_name>")
 		os.Exit(1)
 	}
 
