@@ -29,7 +29,13 @@ func main() {
 
 	flag.StringVar(&imagePath, "image", "", "Path to the KVM image")
 	flag.StringVar(&packages, "packages", "", "Comma-separated list of packages to install")
+	showVersion := flag.Bool("version", false, "Print version information and exit")
 	flag.Parse()
+
+	if *showVersion {
+		printVersion()
+		os.Exit(0)
+	}
 
 	args := flag.Args()
 	if len(args) != 1 || packages == "" {
