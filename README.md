@@ -22,14 +22,6 @@
 - virsh installed on the system
 - virt-customize tool
 
-## Installation
-
-Build the project:
-
-```
-$ go build
-```
-
 ## Usage
 
 ### Installing packages on a VM:
